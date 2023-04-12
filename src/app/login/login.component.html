@@ -1,0 +1,23 @@
+<div class="container wrapper my-5">
+  <h1>Login</h1>
+
+  <input
+    type="text"
+    placeholder="Enter username"
+    class="form-control"
+    (keyup)="getName($event)"
+  />
+  <input
+    type="text"
+    placeholder="Enter email"
+    class="form-control"
+    (keyup)="getEmail($event)"
+  />
+  <button class="btn btn-primary" (click)="login()">Login</button>
+  <div>
+    <label>not a user ?</label>
+    <button class="btn" [ngStyle]="{ color: 'red' }" (click)="goToRegister()">
+      register
+    </button>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="container wrapper my-5">
+  <h1>REGISTER</h1>
+  <input
+    type="text"
+    placeholder="Enter name"
+    class="form-control"
+    (keyup)="getName($event)"
+  />
+  <input
+    type="text"
+    placeholder="Enter email"
+    class="form-control"
+    (keyup)="getEmail($event)"
+  />
+  <input
+    type="password"
+    placeholder="Enter password"
+    [required]="true"
+    class="form-control"
+  />
+  <button class="btn btn-primary" (click)="registerToDb($event)" type="submit">
+    Register
+  </button>
+  <div>
+    <label>already Register ?</label>
+    <button class="btn" [ngStyle]="{ color: 'red' }" (click)="goToLogin()">
+      Login
+    </button>
+  </div>
+</div>

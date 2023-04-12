@@ -1,0 +1,22 @@
+* {
+    justify-self: center;
+}
+
+.container {
+    padding: 4rem;
+    width: 30rem;
+    display: grid;
+    background-color: antiquewhite;
+    justify-content: center;
+
+}
+
+.container input {
+    max-width: 10rem;
+    margin: 1em;
+}
+
+.btn {
+    width: 5rem;
+    justify-self: center;
+}
